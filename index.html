@@ -3,7 +3,7 @@
  <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Team 1_Unit4_11A1</title>
+  <title>Interactive Presentation</title>
   <script src="/_sdk/element_sdk.js"></script>
   <style>
     body {
@@ -42,6 +42,93 @@
     .header p {
       font-size: 20px;
       opacity: 0.9;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .container {
+        padding: 20px 15px;
+      }
+
+      .header {
+        margin-bottom: 30px;
+      }
+
+      .header h1 {
+        font-size: 28px;
+      }
+
+      .header h1 span {
+        font-size: 20px !important;
+      }
+
+      .header p {
+        font-size: 18px;
+      }
+
+      .nav-buttons {
+        gap: 10px;
+      }
+
+      .nav-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+      }
+
+      .content-section {
+        padding: 25px 20px;
+      }
+
+      .section-title {
+        font-size: 24px;
+      }
+
+      .team-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .content-text {
+        font-size: 16px;
+      }
+
+      .highlight-box h3 {
+        font-size: 20px;
+      }
+
+      .highlight-box p {
+        font-size: 15px;
+      }
+
+      .member-icon {
+        font-size: 40px;
+      }
+
+      .member-name {
+        font-size: 16px;
+      }
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+      .container {
+        padding: 35px 25px;
+      }
+
+      .header h1 {
+        font-size: 40px;
+      }
+
+      .header h1 span {
+        font-size: 26px !important;
+      }
+
+      .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .content-section {
+        padding: 35px;
+      }
     }
 
     .nav-buttons {
@@ -336,9 +423,83 @@
    <div id="about" class="content-section">
     <h2 id="about-section-title" class="section-title">About World Heritage</h2>
     <div class="content-text">
-     <h3 style="color: #0369a1; font-size: 28px; margin: 30px 0 25px 0; font-weight: 700; text-align: center;">🎉 1. Festivals 🎉</h3>
+     <h3 style="color: #0369a1; font-size: 28px; margin: 30px 0 25px 0; font-weight: 700; text-align: center;">📜 1. History 📜</h3>
+     <div class="highlight-box" style="background: linear-gradient(135deg, rgba(168, 85, 247, 0.1) 0%, rgba(196, 181, 253, 0.15) 100%); border-left: 4px solid #a855f7;">
+      <h3 style="color: #7c3aed;">🏔️ Ancient Geological Formation</h3>
+      <p>The limestone mountain system here is about <strong>250 million years old</strong>. It has undergone various periods with changes in weather, climate, and sea level, which formed this magnificent landscape we see nowadays.</p>
+     </div>
+     <div class="highlight-box" style="background: linear-gradient(135deg, rgba(168, 85, 247, 0.1) 0%, rgba(196, 181, 253, 0.15) 100%); border-left: 4px solid #a855f7;">
+      <h3 style="color: #7c3aed;">🏰 Historical Significance</h3>
+      <p style="margin-bottom: 12px;">Before becoming the ideal tourist destination that it is now, it was:</p>
+      <ul style="margin: 10px 0; padding-left: 25px; line-height: 1.8;">
+       <li style="margin-bottom: 8px;">Chosen by <strong>King Đinh Tiên Hoàng</strong> to be one of the defensive fortifications in order to protect the capital Hoa Lư thanks to its extremely rugged and strategic topography.</li>
+       <li style="margin-bottom: 8px;">Used by the <strong>Trần Dynasty</strong> as the Vũ Lâm Palace during the resistance war against the Mongol–Yuan invasions.</li>
+      </ul>
+     </div>
+     <div class="highlight-box" style="background: linear-gradient(135deg, rgba(168, 85, 247, 0.1) 0%, rgba(196, 181, 253, 0.15) 100%); border-left: 4px solid #a855f7;">
+      <h3 style="color: #7c3aed;">📜 Historical Legacy</h3>
+      <p>→ Today, this area still preserves many important historical relics from the Đinh and Trần dynasties. For that reason, this place also holds great historical value, reminding visitors of a glorious era in the process of building and protecting the country.</p>
+     </div>
+     <h3 style="color: #0369a1; font-size: 28px; margin: 40px 0 25px 0; font-weight: 700; text-align: center;">📍 2. Location 📍</h3>
+     <div class="highlight-box" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(147, 197, 253, 0.15) 100%); border-left: 4px solid #3b82f6;">
+      <h3 style="color: #2563eb;">🗺️ Geographic Position</h3>
+      <p style="margin-bottom: 12px;">It is located at the southernmost part of the Red River Delta, approximately <strong>90 kilometers southeast of Hanoi</strong>.</p>
+      <p>The property comprises an area of <strong>6,226 hectares</strong> within the Trang An limestone massif, surrounded by a buffer zone of 6,026 hectares comprising mainly rural land and rice fields. There are about <strong>14,000 residents</strong>.</p>
+     </div>
+     <div class="highlight-box" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(147, 197, 253, 0.15) 100%); border-left: 4px solid #3b82f6;">
+      <h3 style="color: #2563eb;">🏞️ Protected Areas</h3>
+      <p style="margin-bottom: 12px;">Situated in the Province of Ninh Binh, Northern Vietnam, near the southern margin of the Red River Delta, Trang An Landscape Complex consists of a mixed cultural and natural property and is primarily contained within three protected areas:</p>
+      <ul style="margin: 10px 0; padding-left: 25px; line-height: 1.8;">
+       <li style="margin-bottom: 8px;">🏛️ The Hoa Lu Ancient Capital</li>
+       <li style="margin-bottom: 8px;">🌄 The Trang An – Tam Coc – Bich Dong Scenic Landscape</li>
+       <li style="margin-bottom: 8px;">🌳 The Hoa Lu Special-Use Forest</li>
+      </ul>
+     </div>
+     <h3 style="color: #0369a1; font-size: 28px; margin: 40px 0 25px 0; font-weight: 700; text-align: center;">🌿 3. Biodiversity 🌿</h3>
+     <div class="highlight-box" style="background: linear-gradient(135deg, rgba(34, 197, 94, 0.1) 0%, rgba(134, 239, 172, 0.15) 100%); border-left: 4px solid #22c55e;">
+      <h3 style="color: #16a34a;">🌍 Overview</h3>
+      <p>The Trang An ecosystem consists of two main ecosystems, namely <strong>limestone mountains</strong> and <strong>aquatic ecosystems</strong>, of very high biodiversity. There are over <strong>600 species of plants</strong> and <strong>200 species of land animals</strong>, about <strong>30 zooplankton species</strong>, and <strong>40 benthic aquatic animal species</strong>.</p>
+     </div>
+     <div class="highlight-box" style="background: linear-gradient(135deg, rgba(34, 197, 94, 0.1) 0%, rgba(134, 239, 172, 0.15) 100%); border-left: 4px solid #22c55e;">
+      <h3 style="color: #16a34a;">🌲 a) Terrestrial Ecosystem</h3>
+      <p style="margin-bottom: 12px;"><strong>Plants:</strong> Includes limestone mountain forests and evergreen forests in valleys, with over <strong>310 rare species</strong> such as cycads, sưa (Dalbergia tonkinensis), gụ (Sindora tonkinensis), orchids.</p>
+      <p><strong>Animals:</strong> More than <strong>200 animal species</strong>, many of which are listed in the Red Book, include serow, clouded leopard, and crested argus pheasant.</p>
+     </div>
+     <div class="highlight-box" style="background: linear-gradient(135deg, rgba(34, 197, 94, 0.1) 0%, rgba(134, 239, 172, 0.15) 100%); border-left: 4px solid #22c55e;">
+      <h3 style="color: #16a34a;">🐟 b) Aquatic Ecosystem</h3>
+      <p style="margin-bottom: 12px;"><strong>Plants:</strong> Include a wide range of algae, mosses, and fungi that provide a varied habitat for numerous aquatic animals.</p>
+      <p><strong>Animals:</strong> Around <strong>30 zooplankton species</strong> and <strong>40 benthic species</strong>, among which many are rare species such as the stripe-necked turtle, which need protection.</p>
+     </div>
+     <div class="highlight-box" style="background: linear-gradient(135deg, rgba(34, 197, 94, 0.1) 0%, rgba(134, 239, 172, 0.15) 100%); border-left: 4px solid #22c55e;">
+      <h3 style="color: #16a34a;">✨ c) Factors Creating This Special Ecosystem</h3>
+      <p style="margin-bottom: 12px;"><strong>Limestone karst topography:</strong> The dissolution of underground limestone by water generates a dramatic landscape and enormous cave systems with interconnecting underground rivers and lakes.</p>
+      <p style="margin-bottom: 12px;"><strong>River-lake-lagoon system:</strong> Including about <strong>31 lakes</strong> and <strong>48 caves</strong> associated with them, creating a peculiar watercolor-like natural scene.</p>
+      <p><strong>Hoa Lu Special-Use Forest:</strong> Is located around the Trang An area and is a home for many rare species, including the white-cheeked gibbon and great hornbill.</p>
+     </div>
+     <h3 style="color: #0369a1; font-size: 28px; margin: 40px 0 25px 0; font-weight: 700; text-align: center;">⭐ 4. Special Mixed Importance ⭐</h3>
      <div class="highlight-box" style="background: linear-gradient(135deg, rgba(251, 191, 36, 0.1) 0%, rgba(253, 224, 71, 0.15) 100%); border-left: 4px solid #f59e0b;">
-      <h3 style="color: #d97706;">🎊 1) Trang An Festival</h3>
+      <h3 style="color: #d97706;">🌍 Overview</h3>
+      <p>A key driver for sustainable tourism development in Ninh Binh and Vietnam, the <strong>UNESCO Mixed World Heritage status</strong> helped promote the image of Vietnam for greater conservation of global values.</p>
+     </div>
+     <div class="highlight-box" style="background: linear-gradient(135deg, rgba(251, 191, 36, 0.1) 0%, rgba(253, 224, 71, 0.15) 100%); border-left: 4px solid #f59e0b;">
+      <h3 style="color: #d97706;">🏛️ a) Cultural and Historical Value</h3>
+      <p style="margin-bottom: 12px;">A former political center of early dynasties, <strong>Hoa Lư</strong> was an ancient capital of the Đinh, Lê, Lý, and Trần dynasties, which has deeply historic imprints and many important events.</p>
+      <p>The area contains many historical, cultural, and archaeological relics such as temples, pagodas, traces of the ancient capital of Hoa Lư, and the Vũ Lâm Royal Palace.</p>
+     </div>
+     <div class="highlight-box" style="background: linear-gradient(135deg, rgba(251, 191, 36, 0.1) 0%, rgba(253, 224, 71, 0.15) 100%); border-left: 4px solid #f59e0b;">
+      <h3 style="color: #d97706;">💰 b) Economic Value</h3>
+      <p style="margin-bottom: 12px;">As such, Trang An has become one of the most attractive destinations, attracting a huge number of domestic and international tourists, making significant contributions to Ninh Binh province's tourism economy and generally that of Vietnam as a whole.</p>
+      <p style="margin-bottom: 12px;"><strong>Promotes local economy:</strong> Tourism development in Trang An represents a major economic resource, supplements the socio-economic development of the whole locality, improves residents' livelihoods, and contributes to turning Ninh Binh into a <em>"Millennial Heritage City."</em></p>
+      <p>Research shows that the TEV of Trang An World Heritage Site is estimated to be about <strong>USD 213 billion</strong>, including 10 core value groups: recreational value, karst system, biodiversity, archaeology, special-use forest, temple-pagoda culture, festivals, folk performing arts, and the value of heritage to residential and agricultural land in the core and buffer zones. Among them, the land value in the buffer zone alone is estimated at <strong>USD 20 billion</strong>.</p>
+     </div>
+     <div class="highlight-box" style="background: linear-gradient(135deg, rgba(251, 191, 36, 0.1) 0%, rgba(253, 224, 71, 0.15) 100%); border-left: 4px solid #f59e0b;">
+      <h3 style="color: #d97706;">🏞️ c) Natural Landscape Value</h3>
+      <p style="margin-bottom: 12px;"><strong>Geology-geomorphology:</strong> Trang An presents a peculiar humid tropical karst limestone landform of international scientific importance, distinctly representing transitions among several landform types in conical peaks and tower karst features.</p>
+      <p><strong>River and cave systems:</strong> Winding rivers connect spectacular cave systems—including Mua Cave, Ba Giot Cave, and But Cave—with pristine valleys to create a <em>"Ha Long Bay on land"</em> type of scenery.</p>
+     </div>
+     <h3 style="color: #0369a1; font-size: 28px; margin: 40px 0 25px 0; font-weight: 700; text-align: center;">🎉 5. Festivals 🎉</h3>
+     <div class="highlight-box" style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.1) 0%, rgba(249, 168, 212, 0.15) 100%); border-left: 4px solid #ec4899;">
+      <h3 style="color: #db2777;">🎊 1) Trang An Festival</h3>
       <p style="margin-bottom: 12px;"><strong>Time:</strong> Held annually in the third lunar month, often with the theme <em>"Trang An – A Thousand-Year Heritage, the Sacred Soul of Rivers and Mountains."</em></p>
       <p style="margin-bottom: 12px;"><strong>Activities:</strong></p>
       <ul style="margin: 10px 0; padding-left: 25px; line-height: 1.8;">
@@ -350,8 +511,8 @@
        <li style="margin-bottom: 8px;">Artists and performers present a variety of traditional art forms on an outdoor stage</li>
       </ul>
      </div>
-     <div class="highlight-box" style="background: linear-gradient(135deg, rgba(251, 191, 36, 0.1) 0%, rgba(253, 224, 71, 0.15) 100%); border-left: 4px solid #f59e0b;">
-      <h3 style="color: #d97706;">🏯 2) Bai Dinh Pagoda Festival</h3>
+     <div class="highlight-box" style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.1) 0%, rgba(249, 168, 212, 0.15) 100%); border-left: 4px solid #ec4899;">
+      <h3 style="color: #db2777;">🏯 2) Bai Dinh Pagoda Festival</h3>
       <p style="margin-bottom: 12px;"><strong>Time:</strong> Opens on the 6th day of the first lunar month and lasts until the end of the third lunar month.</p>
       <p style="margin-bottom: 12px;"><strong>Venue:</strong> Bai Dinh Pagoda.</p>
       <p style="margin-bottom: 12px;"><strong>Activities:</strong></p>
@@ -362,12 +523,12 @@
        <li style="margin-bottom: 8px;">Cultural and artistic activities such as calligraphy writing and photo exhibitions</li>
       </ul>
      </div>
-     <div class="highlight-box" style="background: linear-gradient(135deg, rgba(34, 197, 94, 0.1) 0%, rgba(134, 239, 172, 0.15) 100%); border-left: 4px solid #22c55e;">
-      <h3 style="color: #16a34a;">🌾 Meaning</h3>
+     <div class="highlight-box" style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.1) 0%, rgba(249, 168, 212, 0.15) 100%); border-left: 4px solid #ec4899;">
+      <h3 style="color: #db2777;">🌾 Meaning</h3>
       <p style="margin-bottom: 12px;">These festivals express people's wishes for peace, good weather, and abundant harvests, as well as honor the ancestors who founded the land. They reflect respect and harmony with nature, promote ecological protection, and encourage sustainable development.</p>
      </div>
-     <div class="highlight-box">
-      <h3>🎭 Other Festivals</h3>
+     <div class="highlight-box" style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.1) 0%, rgba(249, 168, 212, 0.15) 100%); border-left: 4px solid #ec4899;">
+      <h3 style="color: #db2777;">🎭 Other Festivals</h3>
       <p style="margin-bottom: 12px;">In addition, the Trang An area also hosts many other traditional festivals, such as:</p>
       <ul style="margin: 10px 0; padding-left: 25px; line-height: 1.8;">
        <li style="margin-bottom: 8px;">🏛️ Hoa Lu Festival</li>
@@ -376,7 +537,7 @@
        <li style="margin-bottom: 8px;">🎪 Bao Ban Non Khe Festival</li>
       </ul>
      </div>
-     <div style="text-align: center; font-size: 20px; font-weight: 600; color: #0369a1; margin-top: 40px; padding: 25px; background: linear-gradient(135deg, rgba(251, 191, 36, 0.1) 0%, rgba(253, 224, 71, 0.15) 100%); border-radius: 15px; border: 3px dashed #f59e0b;">
+     <div style="text-align: center; font-size: 20px; font-weight: 600; color: #0369a1; margin-top: 40px; padding: 25px; background: linear-gradient(135deg, rgba(236, 72, 153, 0.1) 0%, rgba(249, 168, 212, 0.15) 100%); border-radius: 15px; border: 3px dashed #ec4899;">
       <div style="font-size: 42px; margin-bottom: 15px;">
        🎊 🏮 ✨
       </div> "Experience the vibrant cultural traditions and spiritual heritage of Trang An through these magnificent festivals!"
@@ -488,13 +649,16 @@
      <div class="highlight-box">
       <p style="margin-bottom: 20px; font-size: 17px; color: #0369a1; font-weight: 600; font-style: italic;">All of these links are used to support the content:</p>
       <p style="margin-bottom: 15px; line-height: 2;"><strong>1.</strong> <a href="https://baodantoc.vn/ninh-binh-nhieu-cong-trinh-xay-dung-trai-phep-tai-vung-loi-di-san-trang-an-.html" target="_blank" rel="noopener noreferrer" style="color: #0ea5e9; text-decoration: none; border-bottom: 1px solid #7dd3fc;">https://baodantoc.vn/ninh-binh-nhieu-cong-trinh-xay-dung-trai-phep-tai-vung-loi-di-san-trang-an-.html</a></p>
-      <p style="margin-bottom: 15px; line-height: 2;"><strong>2.</strong> <a href="https://laodong.vn/van-hoa/unesco-noi-gi-ve-sai-pham-tai-di-san-trang-an-597148.ldo" target="_blank" rel="noopener noreferrer" style="color: #0ea5e9; text-decoration: none; border-bottom: 1px solid #7dd3fc;">https://laodong.vn/van-hoa/unesco-noi-gi-ve-sai-pham-tai-di-san-trang-an-597148.ldo</a></p>
-      <p style="margin-bottom: 15px; line-height: 2;"><strong>3.</strong> <a href="https://vietnamtourism.gov.vn/post/61645" target="_blank" rel="noopener noreferrer" style="color: #0ea5e9; text-decoration: none; border-bottom: 1px solid #7dd3fc;">https://vietnamtourism.gov.vn/post/61645</a></p>
-      <p style="margin-bottom: 15px; line-height: 2;"><strong>4.</strong> <a href="https://baoninhbinh.org.vn/nhieu-kho-khan-voi-viec-bao-ve-rung-trong-long-di-san-trang/d.6" target="_blank" rel="noopener noreferrer" style="color: #0ea5e9; text-decoration: none; border-bottom: 1px solid #7dd3fc;">https://baoninhbinh.org.vn/nhieu-kho-khan-voi-viec-bao-ve-rung-trong-long-di-san-trang/d.6</a></p>
-      <p style="margin-bottom: 15px; line-height: 2;"><strong>5.</strong> <a href="https://tapchimoitruong.vn/phat-trien-ben-vung-24/bao-ton-phat-huy-cac-gia-tri-khu-di-san-van-hoa-va-thien-nhien-the-gioi-quan-the-danh-thang-trang-an-nham-phat-trien-ben-vung-31762" target="_blank" rel="noopener noreferrer" style="color: #0ea5e9; text-decoration: none; border-bottom: 1px solid #7dd3fc;">https://tapchimoitruong.vn/phat-trien-ben-vung-24/bao-ton-phat-huy-cac-gia-tri-khu-di-san-van-hoa-va-thien-nhien-the-gioi-quan-the-danh-thang-trang-an-nham-phat-trien-ben-vung-31762</a></p>
-      <p style="margin-bottom: 15px; line-height: 2;"><strong>6.</strong> <a href="https://nhandan.vn/gia-tri-kinh-te-cua-di-san-trang-an-va-nhung-dong-gop-da-chieu-post864364.html" target="_blank" rel="noopener noreferrer" style="color: #0ea5e9; text-decoration: none; border-bottom: 1px solid #7dd3fc;">https://nhandan.vn/gia-tri-kinh-te-cua-di-san-trang-an-va-nhung-dong-gop-da-chieu-post864364.html</a></p>
-      <p style="margin-bottom: 15px; line-height: 2;"><strong>7.</strong> <a href="https://dsvh.gov.vn/quan-the-danh-thang-trang-an-1076" target="_blank" rel="noopener noreferrer" style="color: #0ea5e9; text-decoration: none; border-bottom: 1px solid #7dd3fc;">https://dsvh.gov.vn/quan-the-danh-thang-trang-an-1076</a></p>
-      <p style="line-height: 2;"><strong>8.</strong> <a href="https://whc.unesco.org/en/list/1438/" target="_blank" rel="noopener noreferrer" style="color: #0ea5e9; text-decoration: none; border-bottom: 1px solid #7dd3fc;">https://whc.unesco.org/en/list/1438/</a></p>
+      <p style="margin-bottom: 15px; line-height: 2;"><strong>2.</strong> <a href="https://baoninhbinh.org.vn/nhieu-kho-khan-voi-viec-bao-ve-rung-trong-long-di-san-trang/d.6" target="_blank" rel="noopener noreferrer" style="color: #0ea5e9; text-decoration: none; border-bottom: 1px solid #7dd3fc;">https://baoninhbinh.org.vn/nhieu-kho-khan-voi-viec-bao-ve-rung-trong-long-di-san-trang/d.6</a></p>
+      <p style="margin-bottom: 15px; line-height: 2;"><strong>3.</strong> <a href="https://chinhsachcuocsong.vnanet.vn/hang-nghin-du-khach-tham-du-le-hoi-trang-an-le-mo-cua-rung/59081.html" target="_blank" rel="noopener noreferrer" style="color: #0ea5e9; text-decoration: none; border-bottom: 1px solid #7dd3fc;">https://chinhsachcuocsong.vnanet.vn/hang-nghin-du-khach-tham-du-le-hoi-trang-an-le-mo-cua-rung/59081.html</a></p>
+      <p style="margin-bottom: 15px; line-height: 2;"><strong>4.</strong> <a href="https://dsvh.gov.vn/quan-the-danh-thang-trang-an-1076" target="_blank" rel="noopener noreferrer" style="color: #0ea5e9; text-decoration: none; border-bottom: 1px solid #7dd3fc;">https://dsvh.gov.vn/quan-the-danh-thang-trang-an-1076</a></p>
+      <p style="margin-bottom: 15px; line-height: 2;"><strong>5.</strong> <a href="https://laodong.vn/van-hoa/unesco-noi-gi-ve-sai-pham-tai-di-san-trang-an-597148.ldo" target="_blank" rel="noopener noreferrer" style="color: #0ea5e9; text-decoration: none; border-bottom: 1px solid #7dd3fc;">https://laodong.vn/van-hoa/unesco-noi-gi-ve-sai-pham-tai-di-san-trang-an-597148.ldo</a></p>
+      <p style="margin-bottom: 15px; line-height: 2;"><strong>6.</strong> <a href="https://mia.vn/cam-nang-du-lich/doc-dao-le-hoi-trang-an-net-van-hoa-tin-nguong-cua-ninh-binh-2974" target="_blank" rel="noopener noreferrer" style="color: #0ea5e9; text-decoration: none; border-bottom: 1px solid #7dd3fc;">https://mia.vn/cam-nang-du-lich/doc-dao-le-hoi-trang-an-net-van-hoa-tin-nguong-cua-ninh-binh-2974</a></p>
+      <p style="margin-bottom: 15px; line-height: 2;"><strong>7.</strong> <a href="https://nhandan.vn/gia-tri-kinh-te-cua-di-san-trang-an-va-nhung-dong-gop-da-chieu-post864364.html" target="_blank" rel="noopener noreferrer" style="color: #0ea5e9; text-decoration: none; border-bottom: 1px solid #7dd3fc;">https://nhandan.vn/gia-tri-kinh-te-cua-di-san-trang-an-va-nhung-dong-gop-da-chieu-post864364.html</a></p>
+      <p style="margin-bottom: 15px; line-height: 2;"><strong>8.</strong> <a href="https://tapchimoitruong.vn/phat-trien-ben-vung-24/bao-ton-phat-huy-cac-gia-tri-khu-di-san-van-hoa-va-thien-nhien-the-gioi-quan-the-danh-thang-trang-an-nham-phat-trien-ben-vung-31762" target="_blank" rel="noopener noreferrer" style="color: #0ea5e9; text-decoration: none; border-bottom: 1px solid #7dd3fc;">https://tapchimoitruong.vn/phat-trien-ben-vung-24/bao-ton-phat-huy-cac-gia-tri-khu-di-san-van-hoa-va-thien-nhien-the-gioi-quan-the-danh-thang-trang-an-nham-phat-trien-ben-vung-31762</a></p>
+      <p style="margin-bottom: 15px; line-height: 2;"><strong>9.</strong> <a href="https://vi.wikipedia.org/wiki/Khu_du_l%E1%BB%8Bch_sinh_th%C3%A1i_Tr%C3%A0ng_An" target="_blank" rel="noopener noreferrer" style="color: #0ea5e9; text-decoration: none; border-bottom: 1px solid #7dd3fc;">https://vi.wikipedia.org/wiki/Khu_du_l%E1%BB%8Bch_sinh_th%C3%A1i_Tr%C3%A0ng_An</a></p>
+      <p style="margin-bottom: 15px; line-height: 2;"><strong>10.</strong> <a href="https://vietnamtourism.gov.vn/post/61645" target="_blank" rel="noopener noreferrer" style="color: #0ea5e9; text-decoration: none; border-bottom: 1px solid #7dd3fc;">https://vietnamtourism.gov.vn/post/61645</a></p>
+      <p style="line-height: 2;"><strong>11.</strong> <a href="https://whc.unesco.org/en/list/1438/" target="_blank" rel="noopener noreferrer" style="color: #0ea5e9; text-decoration: none; border-bottom: 1px solid #7dd3fc;">https://whc.unesco.org/en/list/1438/</a></p>
      </div>
      <div class="highlight-box" style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.05) 0%, rgba(252, 165, 165, 0.1) 100%); border-left: 4px solid #ef4444; margin-top: 40px;">
       <p style="margin-bottom: 20px; font-size: 17px; color: #dc2626; font-weight: 600; font-style: italic;">🎬 The links below lead to videos:</p>
@@ -727,6 +891,5 @@
       });
     }
   </script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'99b3d74254af9624',t:'MTc2MjU5MjAxNi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'99ba530595c69624',t:'MTc2MjY1OTk5OS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
-
